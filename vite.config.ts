@@ -70,9 +70,6 @@ function writeToLogFile(source: LogSource, entries: unknown[]) {
 
 /**
  * Vite plugin to collect browser debug logs
- * - POST /__manus__/logs: Browser sends logs, written directly to files
- * - Files: browserConsole.log, networkRequests.log, sessionReplay.log
- * - Auto-trimmed when exceeding 1MB (keeps newest entries)
  */
 function vitePluginManusDebugCollector(): Plugin {
   return {
@@ -98,14 +95,12 @@ function vitePluginManusDebugCollector(): Plugin {
     },
 
     configureServer(server: ViteDevServer) {
-      // POST /__manus__/logs: Browser sends logs (written directly to files)
       server.middlewares.use("/__manus__/logs", (req, res, next) => {
         if (req.method !== "POST") {
           return next();
         }
 
         const handlePayload = (payload: any) => {
-          // Write logs directly to files
           if (payload.consoleLogs?.length > 0) {
             writeToLogFile("browserConsole", payload.consoleLogs);
           }
@@ -150,19 +145,14 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-
- export default defineConfig({
+export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
     jsxLocPlugin(),
     vitePluginManusRuntime(),
-    vitePluginManusDebugCollector()
+    vitePluginManusDebugCollector(),
   ],
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-// ... (leave the rest exactly as it is)
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
