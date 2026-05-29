@@ -150,7 +150,7 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-export default defineConfig({
+
  export default defineConfig({
   plugins: [
     react(),
