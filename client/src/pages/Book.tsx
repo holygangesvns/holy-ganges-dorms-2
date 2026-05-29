@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Navbar from "@/components/Navbar";
 import { Star } from "lucide-react";
 
 export default function Book() {
