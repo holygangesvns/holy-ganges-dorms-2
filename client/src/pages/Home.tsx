@@ -11,7 +11,6 @@ import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
 import { useState } from 'react';
 import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
-import BookingEngine from '@/components/BookingEngine';
 
 export default function Home() {
 
@@ -276,7 +275,14 @@ export default function Home() {
             >
               ✈️ Begin Your Journey
             </a>
-            <BookingEngine />
+            <a
+              href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%27d%20like%20to%20book%20my%20stay%20in%20Varanasi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center"
+            >
+              💬 Book Your Stay Now
+            </a>
             <a
               href="/gallery"
               className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center"
