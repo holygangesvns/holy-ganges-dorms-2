@@ -40,6 +40,7 @@ export default function Navbar() {
             {/* LINKS */}
             <nav className="flex flex-col gap-5 text-lg text-gray-700">
               <a href="/" onClick={() => setMenuOpen(false)}>Home</a>
+              <a href="/book" onClick={() => setMenuOpen(false)} style={{ color: '#F54900' }} className="font-bold">Book Now</a>
               <a href="/#map" onClick={() => setMenuOpen(false)}>Location📍</a>
               <a href="/#food" onClick={() => setMenuOpen(false)}>Street Food</a>
               <a href="/#shopping" onClick={() => setMenuOpen(false)}>Treasures</a>
