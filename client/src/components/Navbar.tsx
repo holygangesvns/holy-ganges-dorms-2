@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       {/* HAMBURGER BUTTON */}
       <button
-        className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+        className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
         onClick={() => setMenuOpen(true)}
       >
         <Menu size={26} />
