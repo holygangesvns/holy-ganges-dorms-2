@@ -12,9 +12,11 @@ export default function Header() {
             alt="Holy Ganges Dorms"
             className="w-10 h-10 rounded-full object-cover"
           />
-          <h1 className="text-lg font-semibold text-primary">
-            Holy Ganges Dorms
-          </h1>
+          <a href="https://holy-ganges-dorms.holygangesvns.workers.dev/"
+  className="text-lg font-semibold text-primary hover:opacity-80 transition-opacity"
+>
+  Holy Ganges Dorms
+</a>
         </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
@@ -37,6 +39,12 @@ export default function Header() {
           <a href="/blogs" className="text-sm hover:text-primary transition-colors">
             Blogs
           </a>
+          <a href="/book"
+  className="text-sm font-bold text-black px-4 py-2 rounded-full transition-opacity hover:opacity-90"
+  style={{ backgroundColor: '#F54900' }}
+>
+  Book Now
+</a>
         </nav>
         {/* Mobile Navigation */}
         <div className="md:hidden">
