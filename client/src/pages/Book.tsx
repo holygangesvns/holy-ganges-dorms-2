@@ -6,7 +6,6 @@ export default function Book() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* Page Header */}
       <section className="relative py-16 bg-gradient-to-b from-amber-50 to-white">
         <div className="container text-center">
           <h1 className="text-4xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -18,14 +17,12 @@ export default function Book() {
         </div>
       </section>
 
-      {/* Booking Engine */}
       <section className="container py-8 max-w-3xl mx-auto">
         <BookingEngine />
       </section>
 
-      {/* Footer note */}
       <div className="text-center py-8 text-sm text-muted-foreground">
-        Need help? Call or WhatsApp us at{' '}
+        Need help? Call or WhatsApp us at{" "}
         
           href="https://wa.me/919151563046"
           className="text-primary font-medium hover:underline"
