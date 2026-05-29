@@ -276,11 +276,9 @@ export default function Home() {
               ✈️ Begin Your Journey
             </a>
             <a
-              href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%27d%20like%20to%20book%20my%20stay%20in%20Varanasi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center"
-            >
+            href="/book"
+  className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center"
+>
               💬 Book Your Stay Now
             </a>
             <a
