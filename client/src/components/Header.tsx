@@ -40,7 +40,7 @@ export default function Header() {
             Blogs
           </a>
           <a href="/book"
-  className="text-sm font-bold text-black px-4 py-2 rounded-full transition-opacity hover:opacity-90"
+  className="text-sm font-bold text-black px-4 py-1.5 rounded-full transition-opacity hover:opacity-70 leading-none flex items-center"
   style={{ backgroundColor: '#F54900' }}
 >
   Book Now
