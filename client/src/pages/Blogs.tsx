@@ -3,12 +3,7 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Star, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
-interface BlogPost {
-  id: string;
-  title: string;import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { MapPin, Clock, Star, ArrowRight } from "lucide-react";
-import { useState } from "react";
+
 
 interface BlogPost {
   id: string;
