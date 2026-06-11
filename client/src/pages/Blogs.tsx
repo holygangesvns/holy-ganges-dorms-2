@@ -376,7 +376,7 @@ export default function Blogs() {
               className="overflow-hidden border border-gray-200 rounded-2xl hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => setSelectedSlug(post.slug)}
             >
-              )}
+              
               <div className="p-5">
                 <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">{post.category}</span>
                 <h2 className="text-lg font-semibold text-gray-900 mt-3 mb-2 leading-snug">{post.title}</h2>
