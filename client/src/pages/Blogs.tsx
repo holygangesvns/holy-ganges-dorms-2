@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Star, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import BoatRideIllustration from "@/components/BoatRideIllustration";
 
 interface BlogPost {
   id: string;
@@ -308,7 +309,13 @@ export default function Blogs() {
           >
             Back to Blogs
           </button>
-          <img src={selectedPost.image} alt={selectedPost.title} className="w-full h-64 object-cover rounded-2xl mb-6" />
+          {selectedPost.slug === "morning-boat-rides-varanasi" ? (
+  <div className="w-full rounded-2xl mb-6 overflow-hidden">
+    <BoatRideIllustration />
+  </div>
+) : (
+  <img src={selectedPost.image} alt={selectedPost.title} className="w-full h-64 object-cover rounded-2xl mb-6" />
+)}
           <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
             {selectedPost.category}
           </span>
@@ -369,7 +376,7 @@ export default function Blogs() {
               className="overflow-hidden border border-gray-200 rounded-2xl hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => setSelectedSlug(post.slug)}
             >
-              <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
+              )}
               <div className="p-5">
                 <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">{post.category}</span>
                 <h2 className="text-lg font-semibold text-gray-900 mt-3 mb-2 leading-snug">{post.title}</h2>
