@@ -177,7 +177,7 @@ Every saree is a masterpiece. Every purchase is a vote for heritage, craftsmansh
 
 **Perfect For:** Brides, collectors, gift-givers, anyone seeking authentic Banarasi silk sarees`,
   },
-  ,
+  
 "morning-boat-rides-varanasi": {
   id: "3",
   title: "The Insider's Guide to Morning Boat Rides in Varanasi",
