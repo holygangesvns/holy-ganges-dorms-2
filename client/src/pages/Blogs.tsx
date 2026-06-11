@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Star, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import BoatRideIllustration from "@/components/BoatRideIllustration";
 
 interface BlogPost {
   id: string;
@@ -31,7 +30,7 @@ const blogPosts: BlogPost[] = [
   {
     id: "1",
     title: "Gopi Chaat Bhandar: A Taste of Authentic Varanasi Street Food",
-    excerpt: "Discover the legendary chaat vendor that has been serving authentic Varanasi street food for generations. From crispy aloo tikki to tangy tomato chaat, experience the flavors that define the city.",
+    excerpt: "Discover the legendary chaat vendor that has been serving authentic Varanasi street food for generations. From crispy aloo tikki to tangy tomato chaat, experience the flavors that define...",
     category: "Food & Travel",
     date: "May 2026",
     readTime: "8 min read",
@@ -60,7 +59,7 @@ const blogPosts: BlogPost[] = [
     date: "June 2026",
     readTime: "10 min read",
     author: "Holy Ganges Team",
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1561361058-c24cec7557ef?w=1200&q=80",
     slug: "morning-boat-rides-varanasi",
     featured: true,
   },
@@ -86,11 +85,11 @@ const blogDetails: Record<string, BlogDetail> = {
     tags: ["street food", "chaat", "Varanasi", "authentic", "budget-friendly", "backpacker", "food travel"],
     content: `## The Heart of Varanasi's Street Food Culture
 
-Nestled in the bustling lanes of Khojwan, Bhelupur, Gopi Chaat Bhandar stands as an iconic institution in Varanasi's culinary landscape.
+Nestled in the bustling lanes of Khojwan, Bhelupur, Gopi Chaat Bhandar stands as an iconic institution in Varanasi's culinary landscape. This humble yet legendary street food vendor has become a pilgrimage for every food lover visiting the city.
 
 ### A Legacy of Flavor
 
-Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. The energetic stall is perpetually crowded with hungry customers.
+Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. The energetic stall is perpetually crowded with hungry customers — tourists and locals sharing the same wooden benches.
 
 ### The Must-Try Specialties
 
@@ -100,7 +99,7 @@ Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. 
 
 **Dahi Golgappa** - Hollow, crispy spheres filled with spiced potatoes and chickpeas, dunked into creamy yogurt.
 
-**Pani Puri** - The classic street food that defines Indian snacking.
+**Pani Puri** - The classic street food that defines Indian snacking. The vendor's pani is legendary.
 
 ### Practical Information
 
@@ -114,7 +113,7 @@ Walking up to Gopi Chaat Bhandar feels like stepping into the soul of Varanasi. 
 
 ### The Verdict
 
-Gopi Chaat Bhandar is a cultural institution. If you visit Varanasi and skip it, you have missed an essential piece of the city's soul.
+Gopi Chaat Bhandar is a cultural institution. If you visit Varanasi and skip it, you've missed an essential piece of the city's soul.
 
 **Rating:** 4.2/5 (525+ reviews)
 
@@ -139,11 +138,11 @@ Gopi Chaat Bhandar is a cultural institution. If you visit Varanasi and skip it,
     tags: ["Banarasi silk", "sarees", "shopping", "Varanasi", "traditional", "craftsmanship", "silk weaving"],
     content: `## The Legacy of Banarasi Silk: Jaikara Silk House
 
-In the heart of Varanasi's historic silk district lies Jaikara Silk House, a sanctuary for those seeking authentic Banarasi silk sarees.
+In the heart of Varanasi's historic silk district lies Jaikara Silk House — a sanctuary for those seeking authentic Banarasi silk sarees that represent centuries of weaving mastery. This is not just a shop; it's a celebration of heritage.
 
 ### The Soul of Banarasi Silk
 
-Banarasi silk sarees are more than garments; they are investments in heritage.
+Banarasi silk sarees are more than garments; they are investments in heritage. Each saree is a masterpiece created by skilled weavers who have inherited their craft through generations.
 
 ### Collections That Inspire
 
@@ -157,7 +156,7 @@ Banarasi silk sarees are more than garments; they are investments in heritage.
 
 **Location:** C 26, 36 A-4, Ramkatora Rd, Varanasi 221001
 
-**Contact:** 91 86040 83953
+**Contact:** +91 86040 83953
 
 **Operating Hours:** Open daily until 9 PM
 
@@ -167,7 +166,9 @@ Banarasi silk sarees are more than garments; they are investments in heritage.
 
 ### Supporting Artisans
 
-By choosing Jaikara Silk House, you support traditional artisans and weavers who have perfected their craft over centuries.
+By choosing Jaikara Silk House, you are making a conscious choice to support traditional artisans and weavers. You are investing in a craft that has been perfected over centuries and ensuring that this heritage survives for generations to come.
+
+Every saree is a masterpiece. Every purchase is a vote for heritage, craftsmanship, and authenticity.
 
 **Rating:** 5.0/5 (6 reviews)
 
@@ -181,24 +182,26 @@ By choosing Jaikara Silk House, you support traditional artisans and weavers who
     date: "June 2026",
     readTime: "10 min read",
     author: "Holy Ganges Team",
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
+    image: "https://images.unsplash.com/photo-1561361058-c24cec7557ef?w=1200&q=80",
     slug: "morning-boat-rides-varanasi",
     featured: true,
     location: "Assi Ghat",
     locationUrl: "https://maps.app.goo.gl/6g6i1odHdM5G87Tj7",
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&q=80",
+    images: ["https://images.unsplash.com/photo-1561361058-c24cec7557ef?w=1200&q=80"],
     rating: 4.9,
     reviews: 1200,
     tags: ["boat ride", "sunrise boat ride", "Assi Ghat", "Ganges", "Varanasi", "travel guide", "sunset boat ride", "backpacker"],
     content: `## Why a Boat Ride in Varanasi Is Unmissable
 
-Few experiences capture the spirit of Varanasi better than watching the city awaken from the waters of the Ganges.
+Few experiences capture the spirit of Varanasi better than watching the city awaken from the waters of the Ganges. As priests begin their morning rituals and the first rays of sunlight touch the ancient temples, you realize why millions have journeyed to this sacred place.
+
+For many travelers, a sunrise boat ride becomes the highlight of their entire trip.
 
 ## Best Places to Start a Boat Ride
 
 ### Assi Ghat
 
-The most popular starting point for early morning rides with a peaceful atmosphere.
+Assi Ghat is the most popular starting point for early morning rides. It offers a peaceful atmosphere and easy access for travelers staying near the southern ghats.
 
 ### Dashashwamedh Ghat
 
@@ -208,38 +211,130 @@ The busiest and most famous ghat in Varanasi. Evening rides here provide spectac
 
 Less crowded and ideal for travelers looking for a quieter experience.
 
+### Rajendra Prasad Ghat
+
+A convenient alternative with plenty of shared and private boats available.
+
 ## Typical Boat Ride Prices
 
-**Shared Boats - Sunrise rides:** 150 to 300 rupees per person
+### Shared Boats
 
-**Shared Boats - Sunset rides:** 200 to 400 rupees per person
+**Sunrise rides:** ₹150–₹300 per person
 
-**Private Row Boats:** 800 to 1500 rupees depending on duration.
+**Sunset rides:** ₹200–₹400 per person
 
-**Motor Boats:** 300 to 600 rupees per person.
+### Private Row Boats
+
+₹800–₹1,500 depending on duration and bargaining.
+
+### Motor Boats
+
+₹300–₹600 per person.
+
+Prices can increase during festivals and holidays.
+
+## How to Avoid Tourist Scams
+
+### Agree on the Price Before Boarding
+
+Always confirm:
+
+- **Total cost**
+- **Private or shared boat**
+- **Duration**
+- **Row boat or motor boat**
+
+### Compare Multiple Boats
+
+Never accept the first offer immediately. Walking a few meters often saves money.
+
+### Sunrise Means Less Hassle
+
+Morning rides are usually calmer, less crowded, and easier to negotiate.
 
 ## Sunrise vs Sunset Boat Ride
 
 ### Sunrise Boat Ride
 
-Best time: 5:00 AM to 7:00 AM. Peaceful atmosphere, beautiful golden light, fewer crowds, cooler temperatures.
+**Best time:** 5:00 AM – 7:00 AM
+
+**Advantages:**
+- Peaceful atmosphere
+- Beautiful golden light
+- Excellent photography
+- Authentic local life
+- Cool temperatures
+- Fewer crowds
+
+Many travelers consider sunrise to be the best boat ride experience in Varanasi.
 
 ### Sunset Boat Ride
 
-Best time: 5:00 PM to 7:00 PM. Views of illuminated ghats, watch the Ganga Aarti from the river. More crowds and higher prices.
+**Best time:** 5:00 PM – 7:00 PM
+
+**Advantages:**
+- Views of the illuminated ghats
+- Watch the Ganga Aarti from the river
+- Lively atmosphere
+- Ideal for first-time visitors
+
+**Disadvantages:**
+- More crowds
+- Higher prices
+- Busier river traffic
+
+## What You'll See
+
+A typical ride passes:
+- Assi Ghat
+- Kedar Ghat
+- Harishchandra Ghat
+- Dashashwamedh Ghat
+- Manikarnika Ghat
+- Panchganga Ghat
+
+You'll witness pilgrims bathing, morning prayers, temple bells, and daily life unfolding on the banks of the Ganges.
+
+## How Long Should Your Ride Be?
+
+- 45 minutes: Quick experience
+- 1 hour: Most popular option
+- 90 minutes: Great for photographers
+- 2 hours: Complete experience
+
+## Best Time of Year
+
+October to March offers the most pleasant weather. Winter mornings often create magical mist over the river, making sunrise rides especially beautiful.
 
 ## Our Recommendation
 
-If you are staying at Holy Ganges Dorms, wake up before sunrise and head to Assi Ghat. A shared rowboat costs around 200 to 300 rupees and offers one of the most memorable experiences in Varanasi.
+If you're staying at Holy Ganges Dorms, wake up before sunrise and head to Assi Ghat. A shared rowboat usually costs around ₹200–₹300 and offers one of the most memorable experiences in Varanasi.
 
-**Rating:** 4.9/5 (1200+ reviews)
+Photographers and culture lovers should choose sunrise. Visitors wanting to see the Ganga Aarti from the water should choose sunset. Either way, experiencing Varanasi from the Ganges is something you'll remember forever.
 
-**Perfect For:** Photographers, spiritual seekers, first-time visitors`,
+## Frequently Asked Questions
+
+### Is a boat ride in Varanasi worth it?
+
+Absolutely. It is one of the best ways to experience the city's spiritual atmosphere and ancient traditions.
+
+### Which is better, sunrise or sunset?
+
+Sunrise is quieter and more authentic, while sunset offers the spectacle of the Ganga Aarti.
+
+### How much does a boat ride cost?
+
+Shared boats usually cost ₹150–₹400 per person, while private boats range from ₹800–₹3,000.
+
+### Which ghat is best?
+
+Assi Ghat is best for sunrise rides, while Dashashwamedh Ghat is ideal for evening rides and the Ganga Aarti.`,
   },
 };
 
 function renderContent(content: string) {
   return content.split("\n").map((line, i) => {
+    // H2
     if (line.startsWith("## ")) {
       return (
         <h2 key={i} className="text-3xl font-serif font-bold mt-12 mb-5 text-gray-900">
@@ -247,6 +342,8 @@ function renderContent(content: string) {
         </h2>
       );
     }
+
+    // H3
     if (line.startsWith("### ")) {
       return (
         <h3 key={i} className="text-2xl font-semibold mt-8 mb-3 text-gray-800">
@@ -254,9 +351,13 @@ function renderContent(content: string) {
         </h3>
       );
     }
+
+    // Divider
     if (line.trim() === "---") {
       return <hr key={i} className="my-10 border-gray-200" />;
     }
+
+    // Quote
     if (line.startsWith("> ")) {
       return (
         <blockquote key={i} className="border-l-4 border-primary pl-4 italic text-gray-600 my-6">
@@ -264,31 +365,47 @@ function renderContent(content: string) {
         </blockquote>
       );
     }
+
+    // Bullet lists
     if (line.startsWith("- ") || line.startsWith("• ")) {
       const text = line.slice(2);
       const parts = text.split(/(\*\*[^*]+\*\*)/);
+
       return (
         <ul key={i} className="ml-6 mb-2">
           <li className="list-disc text-gray-700 leading-8">
             {parts.map((part, j) =>
               part.startsWith("**") && part.endsWith("**") ? (
-                <strong key={j} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>
-              ) : (part)
+                <strong key={j} className="font-semibold text-gray-900">
+                  {part.slice(2, -2)}
+                </strong>
+              ) : (
+                part
+              )
             )}
           </li>
         </ul>
       );
     }
+
+    // Blank line
     if (line.trim() === "") {
       return <div key={i} className="h-4" />;
     }
+
+    // Paragraph with bold support
     const parts = line.split(/(\*\*[^*]+\*\*)/);
+
     return (
       <p key={i} className="text-[17px] leading-8 text-gray-700 mb-4">
         {parts.map((part, j) =>
           part.startsWith("**") && part.endsWith("**") ? (
-            <strong key={j} className="font-semibold text-gray-900">{part.slice(2, -2)}</strong>
-          ) : (part)
+            <strong key={j} className="font-semibold text-gray-900">
+              {part.slice(2, -2)}
+            </strong>
+          ) : (
+            part
+          )
         )}
       </p>
     );
@@ -307,49 +424,72 @@ export default function Blogs() {
             onClick={() => setSelectedSlug(null)}
             className="mb-6 text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1"
           >
-            Back to Blogs
+            ← Back to Blogs
           </button>
-          {selectedPost.slug === "morning-boat-rides-varanasi" ? (
-  <div className="w-full rounded-2xl mb-6 overflow-hidden">
-    <BoatRideIllustration />
-  </div>
-) : (
-  <img src={selectedPost.image} alt={selectedPost.title} className="w-full h-64 object-cover rounded-2xl mb-6" />
-)}
+
+          <img
+            src={selectedPost.image}
+            alt={selectedPost.title}
+            className="w-full h-64 object-cover rounded-2xl mb-6"
+          />
+
           <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
             {selectedPost.category}
           </span>
-          <h1 className="text-3xl font-serif font-bold mt-4 mb-2 text-gray-900">{selectedPost.title}</h1>
+
+          <h1 className="text-3xl font-serif font-bold mt-4 mb-2 text-gray-900">
+            {selectedPost.title}
+          </h1>
+
           <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-            <span className="flex items-center gap-1"><Clock size={14} /> {selectedPost.readTime}</span>
-            <span className="flex items-center gap-1"><Star size={14} className="text-yellow-500" /> {selectedPost.rating} ({selectedPost.reviews} reviews)</span>
+            <span className="flex items-center gap-1">
+              <Clock size={14} /> {selectedPost.readTime}
+            </span>
+            <span className="flex items-center gap-1">
+              <Star size={14} className="text-yellow-500" /> {selectedPost.rating} ({selectedPost.reviews}{" "}
+              reviews)
+            </span>
           </div>
+
           <button
             onClick={() => window.open(selectedPost.locationUrl, "_blank")}
             className="flex items-center gap-1 text-sm text-blue-600 hover:underline mb-8"
           >
             <MapPin size={14} /> {selectedPost.location}
           </button>
+
           <div className="text-gray-700">{renderContent(selectedPost.content)}</div>
+
           <hr className="my-8 border-gray-200" />
+
           <div>
             <p className="text-sm font-semibold text-gray-700 mb-3">Tags</p>
             <div className="flex flex-wrap gap-2">
               {selectedPost.tags.map((tag) => (
-                <span key={tag} className="text-xs bg-yellow-50 text-yellow-800 border border-yellow-200 px-3 py-1 rounded-full">
+                <span
+                  key={tag}
+                  className="text-xs bg-yellow-50 text-yellow-800 border border-yellow-200 px-3 py-1 rounded-full"
+                >
                   #{tag}
                 </span>
               ))}
             </div>
           </div>
+
           <div
             className="mt-10 rounded-2xl overflow-hidden relative"
-            style={{ backgroundImage: `url(${selectedPost.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+            style={{
+              backgroundImage: `url(${selectedPost.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative p-8">
               <h3 className="text-2xl font-bold text-white mb-2">Ready to Explore?</h3>
-              <p className="text-white/90 mb-6">Visit {selectedPost.location} and experience the magic of Varanasi firsthand.</p>
+              <p className="text-white/90 mb-6">
+                Visit {selectedPost.location} and experience the magic of Varanasi firsthand.
+              </p>
               <Button
                 onClick={() => window.open(selectedPost.locationUrl, "_blank")}
                 variant="outline"
@@ -368,7 +508,9 @@ export default function Blogs() {
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 py-10">
         <h1 className="text-4xl font-serif font-bold text-gray-900 mb-2">From the Ghats</h1>
-        <p className="text-gray-500 mb-10">Hidden spots, local stories, and honest guides from Holy Ganges Dorms.</p>
+        <p className="text-gray-500 mb-10">
+          Hidden spots, local stories, and honest guides from Holy Ganges Dorms.
+        </p>
         <div className="grid gap-8 md:grid-cols-2">
           {blogPosts.map((post) => (
             <Card
@@ -376,18 +518,27 @@ export default function Blogs() {
               className="overflow-hidden border border-gray-200 rounded-2xl hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => setSelectedSlug(post.slug)}
             >
-              
+              <img src={post.image} alt={post.title} className="w-full h-48 object-cover" />
               <div className="p-5">
-                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">{post.category}</span>
-                <h2 className="text-lg font-semibold text-gray-900 mt-3 mb-2 leading-snug">{post.title}</h2>
+                <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
+                  {post.category}
+                </span>
+                <h2 className="text-lg font-semibold text-gray-900 mt-3 mb-2 leading-snug">
+                  {post.title}
+                </h2>
                 <p className="text-sm text-gray-500 mb-4 line-clamp-3">{post.excerpt}</p>
                 <div className="flex items-center justify-between text-xs text-gray-400">
-                  <span className="flex items-center gap-1"><Clock size={12} /> {post.readTime}</span>
+                  <span className="flex items-center gap-1">
+                    <Clock size={12} /> {post.readTime}
+                  </span>
                   <Button
                     variant="ghost"
                     size="sm"
                     className="text-primary text-xs p-0 h-auto hover:bg-transparent"
-                    onClick={(e) => { e.stopPropagation(); setSelectedSlug(post.slug); }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedSlug(post.slug);
+                    }}
                   >
                     Read more <ArrowRight size={12} className="ml-1" />
                   </Button>
