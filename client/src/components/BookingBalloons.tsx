@@ -43,7 +43,7 @@ export default function BookingBalloons() {
           exit={{ opacity: 0, x: 60 }}
           transition={{ duration: 0.45, ease: 'easeOut' }}
           className="fixed right-6 z-40 flex flex-col gap-3"
-          style={{ top: '50%', transform: 'translateY(-50%)' }}
+          style={{ top: '25%', transform: 'translateY(-50%)' }}
         >
           {BOOKING_PLATFORMS.map((p, i) => (
             <motion.a
