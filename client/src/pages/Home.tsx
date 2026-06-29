@@ -11,6 +11,7 @@ import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
 import { useState } from 'react';
 import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
+import BookingBalloons from '@/components/BookingBalloons';
 
 export default function Home() {
 
@@ -908,7 +909,8 @@ export default function Home() {
 
       {/* Floating WhatsApp Widget */}
       {showWhatsAppWidget && (
-        <a
+      <BookingBalloons /> 
+      <a
           href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20your%20property."
           target="_blank"
           rel="noopener noreferrer"
