@@ -909,6 +909,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Widget */}
       {showWhatsAppWidget && (
+      <> 
       <BookingBalloons /> 
       <a
           href="https://wa.me/919151563046?text=Hi%20Holy%20Ganges%20Dorms%2C%20I%20would%20like%20to%20book%20a%20stay%20at%20your%20property."
@@ -923,6 +924,7 @@ export default function Home() {
             className="w-12 h-12 rounded-full"
           />
         </a>
+      </>
       )}
 
       {/* Floating Backpack Button */}
