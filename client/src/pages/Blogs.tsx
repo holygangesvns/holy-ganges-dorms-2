@@ -185,7 +185,6 @@ By choosing Jaikara Silk House, you support traditional artisans and weavers who
     featured: true,
     location: "Assi Ghat",
     locationUrl: "https://maps.app.goo.gl/6g6i1odHdM5G87Tj7",
-    image: "https://images.unsplash.com/photo-1706186839147-0d708602587b?w=1200&q=80",
     rating: 4.9,
     reviews: 1200,
     tags: ["boat ride", "sunrise boat ride", "Assi Ghat", "Ganges", "Varanasi", "travel guide", "sunset boat ride", "backpacker"],
