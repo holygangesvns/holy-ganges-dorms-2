@@ -7,7 +7,7 @@
  * - Subtle animations that enhance without overwhelming
  */
 
-import { MapPin, Clock, Utensils, Navigation } from 'lucide-react';
+import { MapPin, Clock, Utensils, Navigation, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
 import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
@@ -204,40 +204,67 @@ export default function Home() {
       
 
       {/* Hero Section */}
-      <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
-        <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/varanasi-hero-ganges-MfaFdsg4CvjcKKXqUvdhnr.webp"
-          alt="Ganges River at sunrise"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative z-10 container text-center text-white">
-          <h2 className="hero-text mb-4 drop-shadow-lg">24 Hours in Varanasi</h2>
-          <p className="text-xl md:text-2xl font-light drop-shadow-md mb-8">
-            A sacred journey through the City of Light
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
-            <a
-              href="#map"
-              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center"
-            >
-              ✈️ Begin Your Journey
-            </a>
-            <a
-            href="/book"
-  className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center"
->
-              💬 Book Your Stay Now
-            </a>
-            <a
-              href="/gallery"
-              className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center"
-            >
-              📷 Have a Look
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+<section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
+  {/* Background image — same image emergent uses */}
+  <img
+    src="https://images.unsplash.com/photo-1706186839147-0d708602587b?auto=format&fit=crop&w=2400&q=80"
+    alt="Varanasi ghats at sunrise"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  {/* Multi-stop gradient overlays (3 layers, exactly like emergent) */}
+  <div className="absolute inset-0 bg-gradient-to-b from-[#12344D]/40 via-[#12344D]/30 to-[#12344D]/95"></div>
+  <div className="absolute inset-0 bg-gradient-to-r from-[#6B2E2E]/30 via-transparent to-[#12344D]/40"></div>
+  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#12344D] via-[#12344D]/60 to-transparent"></div>
+
+  {/* Soft glow orbs */}
+  <div className="absolute top-1/4 right-[8%] w-72 h-72 rounded-full bg-[#E08A2E]/25 blur-2xl pointer-events-none"></div>
+  <div className="absolute bottom-1/4 left-[10%] w-56 h-56 rounded-full bg-[#B76E4D]/30 blur-3xl pointer-events-none"></div>
+
+  {/* Flying amber particles */}
+  <div className="pointer-events-none absolute inset-0 overflow-hidden">
+    {Array.from({ length: 25 }).map((_, i) => (
+      <span
+        key={i}
+        className="particle"
+        style={{
+          left: `${Math.random() * 100}%`,
+          bottom: '-10px',
+          width: `${2 + Math.random() * 4}px`,
+          height: `${2 + Math.random() * 4}px`,
+          animationDuration: `${14 + Math.random() * 10}s`,
+          animationDelay: `${Math.random() * 8}s`,
+        }}
+      />
+    ))}
+  </div>
+
+  {/* Hero text + CTAs */}
+  <div className="relative z-10 container text-center text-white">
+    <h2 className="hero-text mb-4 drop-shadow-lg">24 Hours in Varanasi</h2>
+    <p className="text-xl md:text-2xl font-light drop-shadow-md mb-8">
+      A sacred journey through the City of Light
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 items-center justify-center w-full px-4">
+      <a href="#map" className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center">
+        ✈️ Begin Your Journey
+      </a>
+      <a href="/book" className="px-8 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-all font-medium w-full sm:w-auto text-center">
+        💬 Book Your Stay Now
+      </a>
+      <a href="/gallery" className="px-8 py-3 bg-white/20 backdrop-blur text-white rounded-full hover:bg-white/30 transition-all font-medium w-full sm:w-auto text-center">
+        📷 Have a Look
+      </a>
+    </div>
+  </div>
+
+  {/* SCROLL indicator (text + bouncing chevron) */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-[#FAF9F6]/70">
+    <span className="text-[10px] tracking-[0.4em] uppercase">Scroll</span>
+    <ChevronDown size={18} className="scroll-chevron" />
+  </div>
+</section>
 
       {/* Map Section */}
       <section id="map" className="section-divider container py-16 md:py-24">
