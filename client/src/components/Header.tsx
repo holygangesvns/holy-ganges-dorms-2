@@ -220,5 +220,7 @@ const scaleX = useSpring(scrollYProgress, {
         )}
       </AnimatePresence>
     </motion.header>
+
+    </>
   );
 }
