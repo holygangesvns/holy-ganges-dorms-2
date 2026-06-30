@@ -314,11 +314,11 @@ export default function Home() {
           <div className="fade-in">
             <div className="flex items-start gap-4">
               <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Hanuman Ghat</h3>
-                <p className="text-muted-foreground">14 min walk</p>
-                <p className="text-sm mt-2">A quieter ghat dedicated to Lord Hanuman, ideal for contemplative moments.</p>
-              </div>
+             <div>
+              <h3 className="font-semibold text-lg mb-2">Chet Singh Ghat</h3>
+              <p className="text-muted-foreground">18 min walk • 1.4 km</p>
+              <p className="text-sm mt-2">A historic fortified ghat featuring an 18th-century red sandstone palace and stunning riverside architecture.</p>
+            </div>
             </div>
           </div>
         </div>
