@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
 // Holy Ganges brand palette
@@ -28,6 +28,12 @@ const NAV_LINKS = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { scrollYProgress } = useScroll();
+const scaleX = useSpring(scrollYProgress, {
+  stiffness: 100,
+  damping: 30,
+  restDelta: 0.001,
+});
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -37,6 +43,16 @@ export default function Header() {
   }, []);
 
   return (
+    <>
+    {/* Scroll progress bar — sits ABOVE the header */}
+    <motion.div
+      style={{
+        scaleX,
+        background: `linear-gradient(90deg, ${COLORS.saffron}, ${COLORS.copper}, #6B2E2E)`,
+      }}
+      className="fixed top-0 left-0 right-0 h-[2px] origin-left z-[60]"
+    />
+
     <motion.header
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
