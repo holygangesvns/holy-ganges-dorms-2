@@ -300,7 +300,7 @@ export default function Blogs() {
   if (selectedPost) {
     return (
       <div className="min-h-screen bg-white">
-        <div className="max-w-3xl mx-auto px-4 py-10">
+  <div className="max-w-3xl mx-auto px-4 pt-28 pb-10 md:pt-32">
           <button
             onClick={() => setSelectedSlug(null)}
             className="mb-6 text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1"
@@ -358,7 +358,7 @@ export default function Blogs() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-4 py-10">
+  <div className="max-w-4xl mx-auto px-4 pt-28 pb-10 md:pt-32">
         <h1 className="text-4xl font-serif font-bold text-gray-900 mb-2">From the Ghats</h1>
         <p className="text-gray-500 mb-10">Hidden spots, local stories, and honest guides from Holy Ganges Dorms.</p>
         <div className="grid gap-8 md:grid-cols-2">
