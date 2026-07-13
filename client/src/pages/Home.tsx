@@ -12,6 +12,7 @@ import { useState } from 'react';
 import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
 import BookingBalloons from '@/components/BookingBalloons';
+import GuidelinesSection from "../components/GuidelinesSection";
 
 export default function Home() {
 
@@ -553,6 +554,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <GuidelinesSection />
 
       {/* Ganga Aarti Section */}
       <section id="aarti" className="section-divider container py-16 md:py-24">
