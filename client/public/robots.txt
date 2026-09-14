@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://holy-ganges-dorms.holygangesvns.workers.dev/sitemap.xml
