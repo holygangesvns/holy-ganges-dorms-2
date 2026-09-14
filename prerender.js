@@ -7,7 +7,7 @@
  * folder so crawlers/social bots get real content instead of an empty shell.
  *
  * SETUP (one time):
- *   npm install --save-dev puppeteer serve
+ *   Uses puppeteer-core + @sparticuz/chromium + serve (see package.json)
  *
  * USAGE:
  *   Vite:  "build": "vite build && node prerender.js"
@@ -16,7 +16,8 @@
  * BEFORE RUNNING: update ROUTES and DIST_DIR below to match your app.
  */
 
-import puppeteer from "puppeteer";
+import puppeteer from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 import { spawn } from "child_process";
 import fs from "fs";
 import path from "path";
@@ -73,7 +74,10 @@ async function prerender() {
     await waitForServer(BASE_URL);
 
     const browser = await puppeteer.launch({
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
     });
     const page = await browser.newPage();
 
