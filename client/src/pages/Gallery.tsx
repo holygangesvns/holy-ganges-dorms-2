@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { useSeo } from '@/lib/useSeo';
 
 interface GalleryImage {
   id: string;
@@ -36,6 +37,11 @@ const galleryImages: GalleryImage[] = [
 ];
 
 export default function Gallery() {
+  useSeo({
+    title: "Photo Gallery - Holy Ganges Dorms Varanasi",
+    description: "See real photos of our dorms, common areas, river views, and more at Holy Ganges Dorms, Varanasi's top-rated budget hostel near the ghats.",
+    path: "/gallery",
+  });
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeFilter, setActiveFilter] = useState('all');
 
