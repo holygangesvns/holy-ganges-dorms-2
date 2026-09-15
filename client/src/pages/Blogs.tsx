@@ -296,7 +296,6 @@ function renderContent(content: string) {
 }
 
 export default function Blogs() {
-  export default function Blogs() {
   useSeo({
     title: "Varanasi Food, Shopping & Travel Guide - Holy Ganges Dorms",
     description: "Insider guides to Varanasi's best street food, silk shops, and boat rides — curated by the team at Holy Ganges Dorms.",
