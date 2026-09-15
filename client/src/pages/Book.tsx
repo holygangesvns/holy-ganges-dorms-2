@@ -1,7 +1,15 @@
 import { useEffect } from "react";
 import { Star } from "lucide-react";
+import { useSeo } from "@/lib/useSeo";
+
 
 export default function Book() {
+  export default function Book() {
+  useSeo({
+    title: "Book Your Stay - Holy Ganges Dorms Varanasi",
+    description: "Book directly with Holy Ganges Dorms for the best rates on clean, budget dorm beds near Assi Ghat, Varanasi. Free cancellation up to 14 days, instant WhatsApp support.",
+    path: "/book",
+  });
   // --- START NOBEDS RESIZE LOGIC ---
   useEffect(() => {
     const handleResize = (e: MessageEvent) => {
