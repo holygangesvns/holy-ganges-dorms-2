@@ -13,6 +13,7 @@ import { MapView } from '@/components/Map';
 import Navbar from '@/components/Navbar';
 import BookingBalloons from '@/components/BookingBalloons';
 import GuidelinesSection from "../components/GuidelinesSection";
+import InstagramSection from "../components/InstagramSection";
 
 export default function Home() {
 
@@ -555,6 +556,8 @@ export default function Home() {
         </div>
       </section>
       <GuidelinesSection />
+
+      <InstagramSection />
 
       {/* Ganga Aarti Section */}
       <section id="aarti" className="section-divider container py-16 md:py-24">
