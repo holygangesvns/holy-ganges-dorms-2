@@ -302,7 +302,6 @@ export default function Blogs() {
     path: "/blogs",
   });
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
-  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const selectedPost = selectedSlug ? blogDetails[selectedSlug] : null;
 
   if (selectedPost) {
