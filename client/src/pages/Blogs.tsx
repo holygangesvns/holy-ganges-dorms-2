@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Star, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { useSeo } from "@/lib/useSeo";
+
 
 interface BlogPost {
   id: string;
@@ -294,6 +296,13 @@ function renderContent(content: string) {
 }
 
 export default function Blogs() {
+  export default function Blogs() {
+  useSeo({
+    title: "Varanasi Food, Shopping & Travel Guide - Holy Ganges Dorms",
+    description: "Insider guides to Varanasi's best street food, silk shops, and boat rides — curated by the team at Holy Ganges Dorms.",
+    path: "/blogs",
+  });
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const selectedPost = selectedSlug ? blogDetails[selectedSlug] : null;
 
