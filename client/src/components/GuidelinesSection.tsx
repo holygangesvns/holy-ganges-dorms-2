@@ -117,7 +117,7 @@ export default function GuidelinesSection() {
   }, [isOpen]);
 
   return (
-    <section className="max-w-lg px-4 py-4">
+    <section className="w-full max-w-lg mx-auto px-4 py-4">
       <h2 className="text-3xl font-bold text-gray-900 mb-4">Guidelines</h2>
 
       <div className="bg-gray-50 rounded-2xl border border-gray-100 p-5 sm:p-6">
