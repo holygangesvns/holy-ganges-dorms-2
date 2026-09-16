@@ -210,9 +210,10 @@ export default function Home() {
 <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
   {/* Background image — same image emergent uses */}
   <img
-    src="https://images.unsplash.com/photo-1706186839147-0d708602587b?auto=format&fit=crop&w=1600&q=70"
+    src="/assets/hero.webp"
     alt="Varanasi ghats at sunrise"
     className="absolute inset-0 w-full h-full object-cover"
+    fetchPriority="high"
   />
 
   {/* Multi-stop gradient overlays (3 layers, exactly like emergent) */}
