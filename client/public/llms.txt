@@ -1,0 +1,14 @@
+# Holy Ganges Dorms
+
+Holy Ganges Dorms is a budget hostel in Varanasi, India, located near Harishchandra Ghat on the Ganges river. We offer clean, AC dorm beds, free WiFi, lockers, and a rooftop terrace with river views.
+
+## Pages
+
+- [Home & Varanasi City Guide](https://holy-ganges-dorms.holygangesvns.workers.dev/)
+- [Photo Gallery](https://holy-ganges-dorms.holygangesvns.workers.dev/gallery)
+- [Book a Stay](https://holy-ganges-dorms.holygangesvns.workers.dev/book)
+- [Varanasi Travel Blog](https://holy-ganges-dorms.holygangesvns.workers.dev/blogs)
+
+## Contact
+
+Phone/WhatsApp: +91 91515 63046
