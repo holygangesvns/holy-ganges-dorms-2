@@ -210,7 +210,7 @@ export default function Home() {
 <section className="hero-section relative h-screen flex items-center justify-center overflow-hidden">
   {/* Background image — same image emergent uses */}
   <img
-    src="https://images.unsplash.com/photo-1706186839147-0d708602587b?auto=format&fit=crop&w=2400&q=80"
+    src="https://images.unsplash.com/photo-1706186839147-0d708602587b?auto=format&fit=crop&w=1600&q=70"
     alt="Varanasi ghats at sunrise"
     className="absolute inset-0 w-full h-full object-cover"
   />
@@ -573,7 +573,7 @@ export default function Home() {
             <img
               src="https://d2xsxph8kpxj0f.cloudfront.net/310519663494763389/3feaBiwoKqCAZU3tsnFXWU/varanasi-aarti-evening-o2QkEGJE9N2pmpHoQCYXAX.webp"
               alt="Ganga Aarti ceremony"
-              className="w-full rounded-lg shadow-lg"
+              className="w-full aspect-[4/3] object-cover rounded-lg shadow-lg"
             />
           </div>
 
