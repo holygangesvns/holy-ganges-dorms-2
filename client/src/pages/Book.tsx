@@ -20,7 +20,7 @@ import { useSeo } from "@/lib/useSeo";
  * needs to change.
  * ============================================================
  */
-const BOOKING_MODE: "nobeds" | "ezee" | "inquiry" = "nobeds";
+const BOOKING_MODE: "nobeds" | "ezee" | "inquiry" = "inquiry";
 
 const FORMSPREE_URL = "https://formspree.io/f/mojbkoja";
 
